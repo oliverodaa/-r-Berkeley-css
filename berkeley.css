@@ -1,0 +1,321 @@
+/* CUSTOMIZATION FOR THE /R/BERKELEY SUBREDDIT - BY VKMITA :D*/
+
+/* Added Sather Gate design to footer */
+.footer-parent {
+background-image: url(%%sathergate%%);
+background-position: center top;
+background-repeat: no-repeat;
+padding-top: 165px;
+clear: both;
+text-align: center;
+}
+
+.leavemoderator{
+background:transparent;
+}
+
+.icon-menu a{
+  background:transparent;
+}
+
+body > .content {
+  margin: 6px 5px 0 5px;
+}
+
+/* /r/berkeley banner */
+.side {
+  /* Change the padding-top px to the height of the image */
+  /* Padding-right 10px is only necessary for zebra stripes */
+  margin-left: 0;
+  padding: 0px 0px 0px 5px;
+  -moz-border-radius: 8px 0 0 8px;
+  -webkit-border-radius: 8px 0 0 8px;
+}
+.side .spacer {
+  margin: 6px 0 12px 0;
+}
+/* New search-box design */
+.side #search {
+  background-image: url(%%rberkeleytitlebox%%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 365px;
+}
+.side #search input[type="text"] {
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #0F4D92;
+  background-color: #F7F7F7;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 3px;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.login-form-side, .linkinfo {
+  padding-top: 8px;
+  border: 1px solid #0F4D92;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+/* side banner doesn't space correctly with link info boxes on comment pages, this fixes it */
+div .linkinfo {
+   margin-top: 12px;
+}
+
+.titlebox {
+   /* background-image: url(%%BerkeleyCityLogo%%);
+    background-repeat: no-repeat;
+    background-position: 200px 5px;*/
+    background-color: #F7F7F7;
+    padding: 5px;
+    font-size: larger;
+    border: 1px solid #0F4D92;
+    z-index: 99;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    }
+.titlebox h1 {
+    font-family: arial, verdana, helvetica, sans-serif;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display:none;
+    font-size: 19px;
+    color: black !important
+    }
+.titlebox .karma {
+    font-size: 18px;
+    font-weight: bold
+    }
+.titlebox .fancy-toggle-button {
+    display: inline-block;
+    margin-right: 5px
+    }
+.titlebox .bottom {
+    border-top: 1px solid #0F4D92;
+    padding-top: 2px;
+    font-size: 80%;
+    color: black
+    }
+.titlebox .md {
+    font-size: 90%
+    }
+
+/*get rid of the "create your own community" div */
+div.sidebox.create{
+   display:none;
+}
+
+/* Sticky Note */
+.titlebox .usertext-body .md ol li a {
+background-color: #0F4D92;
+                            /*put an image in the sticky*/
+background-position:10px 1px;
+border: 1px solid #FFD700;
+color: #FFD700;
+padding-bottom: 3px;
+/* Doesn't float right if not individually stated */
+padding-left: 3px;
+padding-right: 3px;
+padding-top: 3px;
+}
+/*Didn't Really like how the hover looked on it*/
+/*
+.titlebox .usertext-body .md ol li a:hover {
+background-color: #FFD700;
+color: #0F4D92;
+border: 1px solid #0F4D92;
+}
+*/
+.pagename {
+font-size: 12pt
+}
+.titlebox form {
+position: static
+}
+.titlebox .usertext-body .md ol {
+list-style: none;
+position: absolute;
+top: 98px;
+left: 25px;
+z-index: 90; /*fixed by jooshbro - needs to be less than z-index of "my reddits" dropdown box*/
+margin: 0;
+padding: 0;
+display: inline !important
+}
+.titlebox .usertext-body .md ol li {
+display: inline;
+margin: 0 3px
+}
+.titlebox .usertext-body .md ol li a {
+background-repeat: no-repeat;
+background-color: #0F4D92;
+font-family: verdana, sans-serif;
+font-style: oblique;
+font-weight: bold;
+font-size: 12px;
+color: #FFD700;
+text-align: left;
+padding: 5px 5px 5px 65px;
+border: 1px solid #FFD700;
+display: block;
+width: 400px;
+text-decoration: none;
+text-align: left;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px
+}
+
+
+
+/*zebra-stripes (every odd submission has a slightly different color background) and padding*/
+.sitetable > .link:first-child {
+  background-color: #F7F7F7;
+}
+.link ~ .odd {
+  background-color: #F7F7F7;
+}
+.link {
+  margin: 0 0 10px;
+  padding: 2px
+}
+
+/* Tabs styling (rounded) and hover effect (blue/gold when hovering) */
+.tabmenu li a {
+    background-color: #ffffff !important;
+    color: #192A79 !important;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px
+    }
+.tabmenu li.selected a {
+    background-color: #ffffff !important;
+    border-color: #192A79 #192A79 transparent !important;
+    border-style: solid;
+    border-width: 1px
+    }
+.tabmenu li a:hover {
+    background-color: #192A79 !important;
+    color: #FFD700 !important;
+    border-color: #888888 !important
+    }
+.tabmenu li.selected a:hover {
+    background-color: #ffffff !important;
+    border-color: #192A79 #192A79 transparent !important;
+    border-style: solid;
+    border-width: 1px;
+    color: #192A79 !important;
+    }
+
+.usertext-body h5 {
+    color: red;
+    font: bold 11pt arial
+    }
+.gray {
+    color: #666
+    }
+/* Sidebox in Sidebar formatting (round corners) */
+.sidecontentbox .content {
+    border: 1px solid #0F4D92;
+    background-color: #F7F7F7;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px
+    }
+
+.sidecontentbox a.helplink {
+    margin-right: 8px
+    }
+.sidecontentbox h1 {
+    margin-bottom: 2px;
+    margin-left: 5px
+    }
+
+/* Gold color when hovering over a link */
+p.title{
+   color: #0F4D92;
+}
+.thing .title:hover {
+    color: #b78727;
+    }
+.thing .title:visited {
+    color: #b78727;
+    }
+.thing .title:active {
+    color: #b78727;
+    }
+.thing .title.loggedin:visited {
+    color: #b78727;
+    }
+
+/* votecount colors (blue for upvote, cardinal red for downvote */
+.likes div.score.likes {
+    color: #0F4D92;
+    }
+.link .score.dislikes {
+color: #C41E3A
+    }
+
+
+/* Changing the up arrow to blue and down arrow to red*/
+.arrow.upmod {
+    background-image: url(%%bearpaw%%);
+    width: 15px;
+    height: 14px;
+    background-position: 0 0
+    }
+.arrow.downmod {
+    background-image: url(%%stanfordlogo%%);
+    width: 15px;
+    height: 14px;
+    background-position: 0 0
+    }
+
+/* Changing the subscriber count section */
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox .subscribers span.number:after {
+    content: " Bears"
+    }
+div.titlebox .users-online span.number:after {
+    content: " Bears online"
+    }
+
+
+/* Change the header color */
+#header {
+    background-image: url(%%CalLogo%%);
+    background-color: #0F4D92 ;
+    border-bottom: 1px solid #000099; /* having the border around the WHOLE header looked weird! */
+    background-repeat:no-repeat;
+    background-position:200px 30px;
+
+}
+
+/* Change the properties of the BERKELEY link in the header */
+.pagename a {color: #FFD700;font-size:120% }
+.button .blog1 .headimgcell {
+    background-color: #FFD700;
+    float: left;
+}
+.button .blog .score { color: #c60 }
+
+/* Makes flair form transparent and text black */
+/*This only matters if you have flair*/
+.titlebox form.flairtoggle {
+background-color: transparent;
+color: black;
+}
+a {
+background-color: transparent;
+}
+
+/* Makes moderator form transparent and text black */
+/*This only matters if you are a moderator*/
+.titlebox form.leavemoderator-button {
+background-color: transparent;
+background-position: -4px -600px;
+color: black;
+}
