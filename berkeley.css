@@ -250,12 +250,12 @@ button:active {
 /* LINKS */
 
 .tagline a, .side a {
-    color: #5e82a6;
+    color: #5193B5;
     font-size: 12px;
 }
 
 .usertext-body .md a {
-    color: #5e82a6;
+    color: #5193B5;
 }
 
 a:hover {
@@ -400,13 +400,13 @@ input[type=text]:focus, input[type=password]:focus {
 .pagename a {
     display: block;
     overflow:visible;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     background: url(%%berkeley-seal%%) no-repeat;
-    background-size: 150px 150px;
+    background-size: 170px 170px;
     background-position: center;
     font-size: 0;
-    margin: -100px auto 0px auto !important;
+    margin: 0 auto 0 auto !important;
 }
 
 span.hover.pagename.redditname {
@@ -470,7 +470,7 @@ span.hover.pagename.redditname {
 }
 
 .message-count {
-    background-color: #e6bc4c;
+    background-color: #081F3F;
     color: #4C4C4C !important;
     padding: 2px 5px !important;
     margin: 4px;
@@ -571,15 +571,16 @@ span.hover.pagename.redditname {
 }
 
 .thing a.title {
-    color: #4f85ac;
+    color: #081F3F;
 }
 
 .thing a.title:hover {
+    color: #FCB326;
     border-bottom: 1px dotted rgba(0,0,0,0.2);
 }
 
 .thing .title:visited, .thing.visited .title {
-    color: #a65e9a;
+    color: #5193B5;
 }
 
 .thing.stickied a.title {
@@ -639,8 +640,8 @@ span.hover.pagename.redditname {
 }
 
 .unvotable-message {
-    border: solid 1px #FF8B60;
-    background-color: #FF8B60;
+    border: solid 1px #5193B5;
+    background-color: #5193B5;
     color: #fff;
     margin-top: 4px;
     padding: 2px 6px;
@@ -928,7 +929,7 @@ a.thumbnail.self {
 .commentarea .md blockquote, .usertext-body .md blockquote {
     margin: 8px;
     border: none;
-    border-left: 3px solid #5e82a6;
+    border-left: 3px solid #081F3F;
     padding: 6px 10px;
 }
 
@@ -1024,7 +1025,7 @@ a.thumbnail.self {
 }
 
 .thing .tagline .author.submitter {
-    background-color: #5e82a6;
+    background-color: #081F3F;
     color: #fff;
     font-size: 11px;
     padding: 2px 4px !important;
@@ -1046,7 +1047,7 @@ a.thumbnail.self {
 }
 
 .thing .tagline .author.moderator {
-    background: #62B46D !important;
+    background: #5193B5 !important;
     color: #fff;
     font-weight: bold;
     padding: 2px 4px !important;
@@ -1054,11 +1055,11 @@ a.thumbnail.self {
 }
 
 .thing .tagline .author.moderator:hover {
-    background: #447e4c !important;
+    background: #5193B5 !important;
 }
 
 .tagline .submitter {
-    color: #5e82a6;
+    color: #5193B5;
 }
 
 .tagline .moderator, .green {
@@ -1735,7 +1736,7 @@ body:not(.subscriber) #siteTable:before {
     width: 530px;
     height: 40px;
     margin-left: -5px;
-    background: #5e82a6;
+    background: #081F3F;
     border: none;
     color: #fff;
     text-transform: uppercase;
@@ -1765,7 +1766,7 @@ ul.tabmenu.formtab {
 
 .selected a.link-button.choice, .selected a.text-button.choice {
     padding: 5px 10px;
-    background: #5e82a6;
+    background: #081F3F;
 }
 
 a.text-button.choice, a.link-button.choice {
@@ -1973,7 +1974,7 @@ form .spacer+.spacer {
 }
 
 #tab-grant.selected a, #tab-templates.selected a, #tab-link_templates.selected a {
-    background: #c45b52;
+    background: #FCB326;
     color: #fff;
     border: 0;
 }
@@ -2267,7 +2268,7 @@ ul#image-preview-list .preview img {
 }
 
 .res .thing .tagline .author.submitter {
-    background-color: #5e82a6 !important;
+    background-color: #081F3F !important;
 }
 
 .res .thing .tagline .author.moderator {
@@ -2421,14 +2422,14 @@ ul#image-preview-list .preview img {
 }
 
 .toggleButton:not(.enabled) .toggleOff {
-    background-color: #e74c3c !important;
+    background-color: #081F3F !important;
     color: #fff;
     border: none;
     line-height: 14px;
 }
 
 .moduleToggle.enabled .toggleOn, .toggleButton.enabled .toggleOn {
-    background-color: #62B46D !important;
+    background-color: #5193B5 !important;
     color: #fff;
     border: none;
     line-height: 14px;
@@ -2931,8 +2932,11 @@ html[lang^="nm"] .res #RESStyleSheetTipPane-header {
 
 /* Berkeley Special Stuff */
 
-#headerimg {
+#header-img {
     display:none;
+}
+.title {
+  color:#081F3F;
 }
 
 /* Added Sather Gate design to footer */
