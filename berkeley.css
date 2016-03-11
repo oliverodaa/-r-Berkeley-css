@@ -9,6 +9,37 @@ padding-top: 165px;
 clear: both;
 text-align: center;
 }
+/* ========= end section =========== */
+
+/* Berkeley Link in Header */
+
+.pagename {
+font-size: 12pt
+}
+/* Change the properties of the BERKELEY link in the header */
+.pagename a {color: #FFD700;font-size:120% }
+.button .blog1 .headimgcell {
+    background-color: #FFD700;
+    float: left;
+}
+.button .blog .score { color: #c60 } /*<---- no idea what this does*/
+
+/* ========= end section =========== */
+
+/* Change the header color */
+
+#header {
+    background-image: url(%%CalLogo%%);
+    background-color: #0F4D92 ;
+    border-bottom: 1px solid #000099; /* having the border around the WHOLE header looked weird! */
+    background-repeat:no-repeat;
+    background-position:200px 30px;
+
+}
+
+/* ========= end section =========== */
+
+/* Making various text divs transparent rather than white background */
 
 .leavemoderator{
 background:transparent;
@@ -18,29 +49,45 @@ background:transparent;
   background:transparent;
 }
 
+/* ========= end section =========== */
+
+/* Adds a bit of space around the main content area (below header, above footer) */
+
 body > .content {
   margin: 6px 5px 0 5px;
 }
 
-/* /r/berkeley banner */
+/* ========= end section =========== */
+
+/* /r/berkeley banner <--- I have no idea what this is supposed to do */
+
 .side {
   /* Change the padding-top px to the height of the image */
   /* Padding-right 10px is only necessary for zebra stripes */
   margin-left: 0;
-  padding: 0px 0px 0px 5px;
+  padding: 0 0 0 5px;
   -moz-border-radius: 8px 0 0 8px;
   -webkit-border-radius: 8px 0 0 8px;
 }
 .side .spacer {
   margin: 6px 0 12px 0;
 }
-/* New search-box design */
+
+/* ========= end section =========== */
+
+/* Creepy Oski Picture */
+
 .side #search {
   background-image: url(%%rberkeleytitlebox%%);
   background-position: bottom;
   background-repeat: no-repeat;
   padding-bottom: 365px;
 }
+
+/* ========= end section =========== */
+
+/* Basically just makes the text blue */
+
 .side #search input[type="text"] {
   font-size: 14px;
   color: #666;
@@ -52,16 +99,28 @@ body > .content {
   text-align: left;
 }
 
+/* ========= end section =========== */
+
+/* Appears to do nothing. I can't even find the div */
+
 .login-form-side, .linkinfo {
   padding-top: 8px;
   border: 1px solid #0F4D92;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
 }
+
+/* ========= end section =========== */
+
 /* side banner doesn't space correctly with link info boxes on comment pages, this fixes it */
+
 div .linkinfo {
    margin-top: 12px;
 }
+
+/* ========= end section =========== */
+
+/* Puts the gray box around titlebox sections */
 
 .titlebox {
    /* background-image: url(%%BerkeleyCityLogo%%);
@@ -102,35 +161,6 @@ div .linkinfo {
     font-size: 90%
     }
 
-/*get rid of the "create your own community" div */
-div.sidebox.create{
-   display:none;
-}
-
-/* Sticky Note */
-.titlebox .usertext-body .md ol li a {
-background-color: #0F4D92;
-                            /*put an image in the sticky*/
-background-position:10px 1px;
-border: 1px solid #FFD700;
-color: #FFD700;
-padding-bottom: 3px;
-/* Doesn't float right if not individually stated */
-padding-left: 3px;
-padding-right: 3px;
-padding-top: 3px;
-}
-/*Didn't Really like how the hover looked on it*/
-/*
-.titlebox .usertext-body .md ol li a:hover {
-background-color: #FFD700;
-color: #0F4D92;
-border: 1px solid #0F4D92;
-}
-*/
-.pagename {
-font-size: 12pt
-}
 .titlebox form {
 position: static
 }
@@ -167,7 +197,46 @@ text-align: left;
 -webkit-border-radius: 8px
 }
 
+/* Changing the subscriber count section */
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox .subscribers span.number:after {
+    content: " Bears"
+    }
+div.titlebox .users-online span.number:after {
+    content: " Bears online"
+    }
 
+/* Makes flair form transparent and text black */
+/*This only matters if you have flair*/
+.titlebox form.flairtoggle {
+background-color: transparent;
+color: black;
+}
+a {
+background-color: transparent;
+}
+
+/* Makes moderator form transparent and text black */
+/*This only matters if you are a moderator*/
+.titlebox form.leavemoderator-button {
+background-color: transparent;
+background-position: -4px -600px;
+color: black;
+}
+
+/* ========= end section =========== */
+
+/*get rid of the "create your own community" div */
+
+.sidebox .create{
+   display:none;
+}
+
+/* ========= end section =========== */
+
+/* SUBMISSIONS */
 
 /*zebra-stripes (every odd submission has a slightly different color background) and padding*/
 .sitetable > .link:first-child {
@@ -180,6 +249,8 @@ text-align: left;
   margin: 0 0 10px;
   padding: 2px
 }
+
+/* ========= end section =========== */
 
 /* Tabs styling (rounded) and hover effect (blue/gold when hovering) */
 .tabmenu li a {
@@ -208,29 +279,39 @@ text-align: left;
     border-width: 1px;
     color: #192A79 !important;
     }
+/* ========= end section =========== */
+
+/* Random text colors I guess */
 
 .usertext-body h5 {
     color: red;
     font: bold 11pt arial
     }
 .gray {
-    color: #666
-    }
+    color: #666; /* <-- hail satan */
+}
+
+/* ========= end section =========== */
+
 /* Sidebox in Sidebar formatting (round corners) */
+
 .sidecontentbox .content {
     border: 1px solid #0F4D92;
     background-color: #F7F7F7;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px
-    }
+}
 
 .sidecontentbox a.helplink {
     margin-right: 8px
-    }
+}
+
 .sidecontentbox h1 {
     margin-bottom: 2px;
     margin-left: 5px
-    }
+}
+
+/* ========= end section =========== */
 
 /* Gold color when hovering over a link */
 p.title{
@@ -252,10 +333,11 @@ p.title{
 /* votecount colors (blue for upvote, cardinal red for downvote */
 .likes div.score.likes {
     color: #0F4D92;
-    }
+}
+
 .link .score.dislikes {
-color: #C41E3A
-    }
+    color: #C41E3A
+}
 
 
 /* Changing the up arrow to blue and down arrow to red*/
@@ -263,59 +345,12 @@ color: #C41E3A
     background-image: url(%%bearpaw%%);
     width: 15px;
     height: 14px;
-    background-position: 0 0
-    }
+    background-position: 0 0;
+}
+
 .arrow.downmod {
     background-image: url(%%stanfordlogo%%);
     width: 15px;
     height: 14px;
-    background-position: 0 0
-    }
-
-/* Changing the subscriber count section */
-div.titlebox span.word {
-    display: none
-    }
-div.titlebox .subscribers span.number:after {
-    content: " Bears"
-    }
-div.titlebox .users-online span.number:after {
-    content: " Bears online"
-    }
-
-
-/* Change the header color */
-#header {
-    background-image: url(%%CalLogo%%);
-    background-color: #0F4D92 ;
-    border-bottom: 1px solid #000099; /* having the border around the WHOLE header looked weird! */
-    background-repeat:no-repeat;
-    background-position:200px 30px;
-
-}
-
-/* Change the properties of the BERKELEY link in the header */
-.pagename a {color: #FFD700;font-size:120% }
-.button .blog1 .headimgcell {
-    background-color: #FFD700;
-    float: left;
-}
-.button .blog .score { color: #c60 }
-
-/* Makes flair form transparent and text black */
-/*This only matters if you have flair*/
-.titlebox form.flairtoggle {
-background-color: transparent;
-color: black;
-}
-a {
-background-color: transparent;
-}
-
-/* Makes moderator form transparent and text black */
-/*This only matters if you are a moderator*/
-.titlebox form.leavemoderator-button {
-background-color: transparent;
-background-position: -4px -600px;
-color: black;
+    background-position: 0 0;
 }
