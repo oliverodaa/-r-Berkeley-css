@@ -1,0 +1,14 @@
+/* Berkeley Link in Header */
+.pagename {
+  font-size: 12pt
+}
+
+/* Change the properties of the BERKELEY link in the header */
+.pagename a {
+  color: #FFD700;
+  font-size:120%;
+}
+.button .blog1 .headimgcell {
+    background-color: #FFD700;
+    float: left;
+}
