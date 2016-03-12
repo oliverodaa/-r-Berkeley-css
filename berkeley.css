@@ -372,52 +372,6 @@ input[type=text]:focus, input[type=password]:focus {
     background: #f2f2f2;
 }
 
-
-
-/*** HEADER ***/
-
-#header {
-    border-bottom: 0;
-    height: 200px;
-}
-
-#header-img, .pagename a {
-    transition: 200ms;
-    opacity: 0.8;
-    border-radius: 5px;
-}
-
-#header-img:hover, .pagename a:hover {
-    opacity: 1;
-    background-color: rgba(0,0,0,0.075);
-}
-
-#header-img {
-    margin-top: 25px;
-    margin-left: 30px;
-}
-
-.pagename a {
-    display: block;
-    overflow:visible;
-    width: 170px;
-    height: 170px;
-    background: url(%%berkeley-seal%%) no-repeat;
-    background-size: 170px 170px;
-    background-position: center;
-    font-size: 0;
-    margin: 0 auto 0 auto !important;
-}
-
-span.hover.pagename.redditname {
-    display: block;
-    margin-top: -14px;
-    margin-left: -5px;
-    font-size: 0px;
-}
-
-
-
 /*** USER BAR ***/
 
 #header-bottom-right {
@@ -2924,6 +2878,47 @@ html[lang^="nm"] .res #RESStyleSheetTipPane-header {
     border-radius: 2px;
 }
 
+/*** HEADER ***/
+
+#header {
+    border-bottom: 0;
+    height: 200px;
+}
+
+#header-img, .pagename a {
+    transition: 200ms;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+#header-img:hover, .pagename a:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.075);
+}
+
+#header-img {
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.pagename a {
+    display: block;
+    overflow:visible;
+    width: 229px;
+    height: 65px;
+    background: url(%%berkeley-logo%%) no-repeat;
+    background-size: 229px 65px;
+    background-position: center;
+    font-size: 0;
+    margin: -50px auto 0 auto !important;
+}
+
+span.hover.pagename.redditname {
+    display: block;
+    margin-top: -14px;
+    margin-left: -5px;
+    font-size: 0px;
+}
 
 
 /* [ STCKY v1.07 by doingstuffcarl ]
@@ -2932,18 +2927,23 @@ html[lang^="nm"] .res #RESStyleSheetTipPane-header {
 
 /* Berkeley Special Stuff */
 
-#header-img {
-    display:none;
-}
 .title {
   color:#081F3F;
 }
 
+/* Oski-Snu */
+#header-img {
+    position:relative;
+    bottom:-40px;
+}
+/* ========= end section =========== */
+
 /* Added Sather Gate design to footer */
 .footer-parent {
-    background-image: url(%%sather%%);
+    background-image: url(%%berkeley-seal%%);
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: 165px 165px;
     padding-top: 165px;
     clear: both;
     text-align: center;
