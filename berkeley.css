@@ -2972,3 +2972,17 @@ span.hover.pagename.redditname {
     background-position: 0 0;
 }
 /* ========= end section =========== */
+
+/* Changing the subscriber count section */
+
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox .subscribers span.number:after {
+    content: " bears"
+    }
+div.titlebox .users-online span.number:after {
+    content: " bears online"
+    }
+
+/* ========= end section =========== */
